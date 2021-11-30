@@ -11,9 +11,13 @@ from sklearn.datasets import load_iris
 headers = {'User-Agent':
            'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'}
 
-page = "https://www.transfermarkt.co.uk/transfers/transferrekorde/statistik?saison_id=alle&land_id=0&ausrichtung=&spielerposition_id=&altersklasse=&leihe=&w_s=&plus=1"
+#page = "https://www.transfermarkt.co.uk/transfers/transferrekorde/statistik?saison_id=alle&land_id=0&ausrichtung=&spielerposition_id=&altersklasse=&leihe=&w_s=&plus=1"
+page = "https://www.transfermarkt.com/premier-league/marktwerte/wettbewerb/GB1/plus/1/galerie/0?pos=Torwart&detailpos=&altersklasse=alle&page=2"
+#                                                                                                                                        ^^^^^^
+
 pageTree = requests.get(page, headers=headers)
 pageSoup = BeautifulSoup(pageTree.content, 'html.parser')
+print(pageSoup)
 
 Playersdata = pageSoup.find_all("td", {"class": "hauptlink"})
 Values = pageSoup.find_all("td", {"class": "rechts hauptlink"})
