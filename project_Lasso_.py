@@ -13,20 +13,21 @@ import matplotlib.patches as mpatches
 
 
 #Import Data
-df=pd.read_csv("defender.csv")
+df=pd.read_csv("Defenders.csv")
 # print(df.head())
-X1=df.iloc[:,2]
-X2=df.iloc[:,3]
-X3=df.iloc[:,4]
-X4=df.iloc[:,5]
-X5=df.iloc[:,6]
-X6=df.iloc[:,7]
-X7=df.iloc[:,8]
-X8=df.iloc[:,9]
-X9=df.iloc[:,10]
-X10=df.iloc[:,11]
+X1=df.iloc[:,2]     # Age
+X2=df.iloc[:,3]     # Games Played
+X3=df.iloc[:,4]     # Goals
+X4=df.iloc[:,5]     # Own Goals
+X5=df.iloc[:,6]     # Assists
+X6=df.iloc[:,7]     # Yellow Cards
+X7=df.iloc[:,8]     # Red Cards
+X8=df.iloc[:,9]     # Second Yellows
+X9=df.iloc[:,10]    # Subbed On
+X10=df.iloc[:,11]   # Subbed Off
 X=np.column_stack((X1,X2,X3,X4,X5,X6,X7,X8,X9,X10))
-y=df.iloc[:,13]
+
+y=df.iloc[:,12]     # Market Value
 
 
 #Split test and train data with ratio 2/8, adjust polynomial feature to q=2
