@@ -1,7 +1,8 @@
 import numpy as np
 import pandas as pd
 
-df = pd.read_csv("Defenders.csv")
+#df = pd.read_csv("Defenders.csv")
+df = pd.read_csv("Midfielders.csv")
 
 age = df.iloc[:,2]
 games_played=df.iloc[:,3]
@@ -31,16 +32,20 @@ kf = KFold(n_splits=5)
 C_range = [0.1,0.5,1,5,10,50,100,500]
 poly_range = [1,2,3,4]
 
-for Ci in C_range:
-#for poly_i in poly_range:
+#for Ci in C_range:
+for poly_i in poly_range:
     from sklearn.linear_model import Lasso
     # 10 is optimum C value
-    model = Lasso(alpha=(1/2*Ci))
-    #model = Lasso(alpha=(1/(2*10)))
+    #model = Lasso(alpha=(1/2*Ci))      # find optimum C val
+    
+    #model = Lasso(alpha=(1/(2*10)))    # Defenders.csv
+    model = Lasso(alpha=(1/(2*0.5)))    # Midfielders.csv
 
     from sklearn.preprocessing import PolynomialFeatures
-    xPoly = PolynomialFeatures(2).fit_transform(X)
-    #xPoly = PolynomialFeatures(poly_i).fit_transform(X)
+    xPoly = PolynomialFeatures(poly_i).fit_transform(X) # find optimum poly val
+
+    #xPoly = PolynomialFeatures(2).fit_transform(X)  # Defenders.csv AND Midfielders.csv
+
 
     from sklearn.dummy import DummyRegressor
     dum_model = DummyRegressor(strategy="mean")
@@ -59,13 +64,38 @@ for Ci in C_range:
         dum_pred = dum_model.predict(y[test])
 
         dum_temp.append(mean_squared_error(y[test],dum_pred))
-    print("Ci = ",Ci)
-    #print("poly_i = ",poly_i)
+    
+    #print("Ci = ",Ci)
+    print("poly_i = ",poly_i)
+    
     print("Lasso MSE: ",np.array(lasso_temp).mean())
     print("Lasso MSE standard deviation",np.array(lasso_temp).std())
 
     print("Dummy MSE: ",np.array(dum_temp).mean())
     print("Dummy MSE standard deviation",np.array(dum_temp).std())
     print()
+
+# Defenders.csv
+#-------------------------
 # Best C value is 10
 # Best poly value is 2
+
+# MSE of 173.69
+# std of 238.84
+
+# dummy model has MSE of 247.55
+# and std MSE of 344.40
+
+# Midfielders.csv
+#--------------------------
+# Best C value is 0.5
+# Best poly value is 2
+
+# MSE of 318.95
+# std of 451.78
+
+# dummy model has MSE of 372.64
+# and std of 530.02
+
+# Forwards.csv
+#-------------------------
