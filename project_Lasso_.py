@@ -9,7 +9,7 @@ from sklearn.metrics import r2_score
 from sklearn.dummy import DummyRegressor
 
 #Import Data
-df=pd.read_csv("Defenders.csv")
+df=pd.read_csv("Midfielders.csv")
 # print(df.head())
 X1=df.iloc[:,2]     # Age
 X2=df.iloc[:,3]     # Games Played
@@ -21,12 +21,13 @@ X7=df.iloc[:,8]     # Red Cards
 X8=df.iloc[:,9]     # Second Yellows
 X9=df.iloc[:,10]    # Subbed On
 X10=df.iloc[:,11]   # Subbed Off
-X11=df.iloc[:,13]   # Transfer fees
-X11=X11/10000000    # reduce the size of the fee, otherwise the model will be unstable
-X=np.column_stack((X1,X2,X3,X5,X6,X9,X10,X11))
+X11=df.iloc[:,12]   # Transfer fees
+X11=X11/1000000    # reduce the size of the fee, otherwise the model will be unstable
+#X=np.column_stack((X1,X2,X3,X5,X6,X9,X10,X11))
+X = np.column_stack((X1,X11))
 
-y=df.iloc[:,12]     # Market Value
-y=y/10000000        # reduce the size of the MV, otherwise the model will be unstable
+y=df.iloc[:,13]     # Market Value
+y=y/1000000        # reduce the size of the MV, otherwise the model will be unstable
 
 #Split test and train data with ratio 2/8, adjust polynomial feature to q=2
 Xtrain, Xtest, ytrain, ytest = train_test_split(X,y,test_size=0.2)
