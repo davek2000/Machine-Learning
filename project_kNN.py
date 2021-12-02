@@ -1,5 +1,3 @@
-
-
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -19,8 +17,11 @@ X7=df.iloc[:,8]     # Red Cards
 X8=df.iloc[:,9]     # Second Yellow
 X9=df.iloc[:,10]    # Subbed On 
 X10=df.iloc[:,11]   # Subbed Off
-X=np.column_stack((X1,X2,X3,X4,X5,X6,X7,X8,X9,X10))
+X11=df.iloc[:,13]   # Transfer fees
+X11=X11/10000000    # reduce the size to make sure model is stable
+X=np.column_stack((X1,X2,X3,X4,X5,X6,X7,X8,X9,X10,X11))
 y=df.iloc[:,12]     # Market Value
+y=y/10000000        # reduce the size to make sure model is stable
 
 #Split test and train data with ratio 20% / 80%
 Xtrain, Xtest, ytrain, ytest = train_test_split(X,y,test_size=0.2)
