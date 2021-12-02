@@ -26,26 +26,21 @@ y = y/1000000   # divided by a million
 from sklearn.model_selection import KFold
 kf = KFold(n_splits=5)
 
-# from sklearn.preprocessing import PolynomialFeatures
-# xPoly = PolynomialFeatures(2).fit_transform(X)
-
 C_range = [0.0001,0.001,0.01,0.1,0.5,1,5,10,50,100,500]
-poly_range = [1,2,3,4]
+poly_range=[1,2,3,4]
 
 for Ci in C_range:
 #for poly_i in poly_range:
-    from sklearn.linear_model import Lasso
-    # 10 is optimum C value
-    model = Lasso(alpha=(1/2*Ci))      # find optimum C val
-    
-    #model = Lasso(alpha=(1/(2*10)))    # Defenders.csv
-    #model = Lasso(alpha=(1/(2*0.5)))    # Midfielders.csv
+    from sklearn.linear_model import Ridge
+    model = Ridge(alpha=(1/(2*Ci)))     # find optimum C val
+
+    #model = Ridge(alpha=(1/(2*0.001)))  # Defenders.csv AND Midfielders.csv
 
     from sklearn.preprocessing import PolynomialFeatures
-    #xPoly = PolynomialFeatures(poly_i).fit_transform(X) # find optimum poly val
-
-    xPoly = PolynomialFeatures(2).fit_transform(X)  # Defenders.csv AND Midfielders.csv
-
+    #xPoly = PolynomialFeatures(poly_i).fit_transform(X) # find optimum poly_i val
+    
+    #xPoly = PolynomialFeatures(1).fit_transform(X)      # Defenders.csv
+    xPoly = PolynomialFeatures(2).fit_transform(X)     # Midfielders.csv
 
     from sklearn.dummy import DummyRegressor
     dum_model = DummyRegressor(strategy="mean")
@@ -68,8 +63,8 @@ for Ci in C_range:
     print("Ci = ",Ci)
     #print("poly_i = ",poly_i)
     
-    print("Lasso MSE: ",np.array(lasso_temp).mean())
-    print("Lasso MSE standard deviation",np.array(lasso_temp).std())
+    print("Ridge MSE: ",np.array(lasso_temp).mean())
+    print("Ridge MSE standard deviation",np.array(lasso_temp).std())
 
     print("Dummy MSE: ",np.array(dum_temp).mean())
     print("Dummy MSE standard deviation",np.array(dum_temp).std())
@@ -77,25 +72,27 @@ for Ci in C_range:
 
 # Defenders.csv
 #-------------------------
-# Best C value is 10
-# Best poly value is 2
+# Best C value is 0.001
+# Best poly value is 1
 
-# MSE of 173.69
-# std of 238.84
+# MSE of 178.82
+# std of 256.12
 
 # dummy model has MSE of 247.55
 # and std MSE of 344.40
 
 # Midfielders.csv
 #--------------------------
-# Best C value is 0.5
+# Best C value is 0.001
 # Best poly value is 2
 
-# MSE of 318.95
-# std of 451.78
+# MSE of 297.09
+# std of 374.89
 
 # dummy model has MSE of 372.64
 # and std of 530.02
 
 # Forwards.csv
 #-------------------------
+
+
