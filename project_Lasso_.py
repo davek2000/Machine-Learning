@@ -1,16 +1,12 @@
-
-
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import KFold
-from mpl_toolkits.mplot3d import Axes3D
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.linear_model import Lasso
 from sklearn.metrics import mean_squared_error
-import matplotlib.patches as mpatches
-
+from sklearn.metrics import r2_score
+from sklearn.dummy import DummyRegressor
 
 #Import Data
 df=pd.read_csv("Defenders.csv")
@@ -25,14 +21,16 @@ X7=df.iloc[:,8]     # Red Cards
 X8=df.iloc[:,9]     # Second Yellows
 X9=df.iloc[:,10]    # Subbed On
 X10=df.iloc[:,11]   # Subbed Off
-X=np.column_stack((X1,X2,X3,X4,X5,X6,X7,X8,X9,X10))
+X11=df.iloc[:,13]   # Transfer fees
+X11=X11/10000000    # reduce the size of the fee, otherwise the model will be unstable
+X=np.column_stack((X1,X2,X3,X5,X6,X9,X10,X11))
 
 y=df.iloc[:,12]     # Market Value
-
+y=y/10000000        # reduce the size of the MV, otherwise the model will be unstable
 
 #Split test and train data with ratio 2/8, adjust polynomial feature to q=2
 Xtrain, Xtest, ytrain, ytest = train_test_split(X,y,test_size=0.2)
-Xpoly = PolynomialFeatures(1).fit_transform(Xtrain)
+Xpoly = PolynomialFeatures(2).fit_transform(Xtrain)
 
 
 #C=5 Lasso model, coefficients
@@ -42,16 +40,18 @@ model1.fit(Xpoly, ytrain)
 
 
 #final test of the unseen data set
-X_test_poly = PolynomialFeatures(1).fit_transform(Xtest)
+X_test_poly = PolynomialFeatures(2).fit_transform(Xtest)
 ypred1 = model1.predict(X_test_poly)
-error_final=mean_squared_error(ytest,ypred1)
+error_final=mean_squared_error(ytest,ypred1)    #this is using mean square error as evaluation
+error_final2=r2_score(ytest,ypred1)              #this is using R2 score as evaluation
 print(error_final)
+print(error_final2)
 
 #basline predictor
-constant=np.mean(y);
-length=len(y)
-baseline_pred=np.empty(length)
-baseline_pred.fill(constant)
-error_base=mean_squared_error(baseline_pred,y)
+dummy = DummyRegressor(strategy="mean").fit(Xpoly, ytrain)
+ydummy = dummy.predict(X_test_poly)
+error_base=mean_squared_error(ytest,ydummy)
+error_base2=r2_score(ytest,ydummy)
 print(error_base)
+print(error_base2)
 
