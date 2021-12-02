@@ -1,8 +1,8 @@
 import numpy as np
 import pandas as pd
 
-#df=pd.read_csv("Defenders.csv")
-df=pd.read_csv("Midfielders.csv")
+df=pd.read_csv("Defenders.csv")
+#df=pd.read_csv("Midfielders.csv")
 
 age = df.iloc[:,2]
 games_played=df.iloc[:,3]
@@ -24,7 +24,7 @@ y = df.iloc[:,13]
 y = y/1000000   # divided by a million
 
 from sklearn.model_selection import KFold
-kf = KFold(n_splits=5)
+kf = KFold(n_splits=5,shuffle=True)
 
 poly_range = [1,2,3,4]
 

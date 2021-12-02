@@ -24,7 +24,7 @@ y = df.iloc[:,13]
 y = y/1000000   # divided by a million
 
 from sklearn.model_selection import KFold
-kf = KFold(n_splits=5)
+kf = KFold(n_splits=5,shuffle=True)
 
 # from sklearn.preprocessing import PolynomialFeatures
 # xPoly = PolynomialFeatures(2).fit_transform(X)

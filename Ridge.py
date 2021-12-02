@@ -24,7 +24,7 @@ y = df.iloc[:,13]
 y = y/1000000   # divided by a million
 
 from sklearn.model_selection import KFold
-kf = KFold(n_splits=5)
+kf = KFold(n_splits=5,shuffle=True)
 
 C_range = [0.0001,0.001,0.01,0.1,0.5,1,5,10,50,100,500]
 poly_range=[1,2,3,4]
