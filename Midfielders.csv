@@ -1,218 +1,218 @@
-Name,Nationality,Age,Games Played,Goals,Own Goals,Assists,Yellow Cards,Red Cards,Second Yellow,Subbed On,Subbed Off,Value
-Kevin De Bruyne,Belgium,30,14,3,0,1,1,0,0,4,6,100000000.0
-Frenkie de Jong,Netherlands,24,16,1,0,2,3,0,1,0,2,90000000.0
-Bruno Fernandes,Portugal,27,21,5,0,9,4,0,0,4,6,90000000.0
-Joshua Kimmich,Germany,26,18,3,0,4,1,0,0,0,3,90000000.0
-Pedri,Spain,19,5,0,0,0,0,0,0,1,2,80000000.0
-Phil Foden,England,21,14,5,0,4,0,0,0,4,4,80000000.0
-Marcos Llorente,Spain,26,14,0,0,1,2,0,0,1,3,80000000.0
-Mason Mount,England,22,16,3,0,2,0,0,0,8,4,75000000.0
-Jude Bellingham,England,18,20,3,0,7,4,0,0,0,6,70000000.0
-Declan Rice,England,22,17,3,0,3,5,0,0,0,2,70000000.0
-Rodri,Spain,25,17,2,0,0,3,0,0,1,2,70000000.0
-Kai Havertz,Germany,22,17,4,0,2,0,0,0,5,6,70000000.0
-Sergej Milinković-Savić,Serbia,26,20,4,0,4,4,0,0,6,8,70000000.0
-Bernardo Silva,Portugal,27,19,4,0,2,3,0,0,2,6,70000000.0
-Leon Goretzka,Germany,26,17,2,0,2,0,0,0,0,8,70000000.0
-Casemiro,Brazil,29,18,0,0,2,5,0,0,1,3,70000000.0
-Florian Wirtz,Germany,18,17,8,0,9,2,0,0,4,11,65000000.0
-Bukayo Saka,England,20,15,3,0,2,1,0,0,2,8,65000000.0
-Federico Valverde,Uruguay,23,13,0,0,1,0,0,0,3,4,65000000.0
-Nicolò Barella,Italy,24,19,1,0,6,3,0,0,0,11,65000000.0
-Wilfred Ndidi,Nigeria,24,14,1,0,0,2,0,1,1,0,60000000.0
-Fabinho,Brazil,28,14,1,0,1,3,0,0,3,2,60000000.0
-Paul Pogba,France,28,13,0,0,7,4,1,0,3,4,60000000.0
-Koke,Spain,29,16,0,0,1,3,0,0,0,4,60000000.0
-Eduardo Camavinga,France,19,23,2,0,1,6,0,0,13,6,55000000.0
-Franck Kessié,Cote d'Ivoire,24,15,2,0,1,1,0,1,3,3,55000000.0
-Youri Tielemans,Belgium,24,17,3,0,3,2,0,0,1,3,55000000.0
-N'Golo Kanté,France,30,12,2,0,0,1,0,0,2,8,55000000.0
-Marco Verratti,Italy,29,8,0,0,0,5,0,0,0,6,55000000.0
-Jamal Musiala,Germany,18,18,4,0,4,0,0,0,14,4,50000000.0
-James Maddison,England,25,19,3,0,4,1,0,0,7,11,50000000.0
-Dani Olmo,Spain,23,7,0,0,1,0,0,0,3,4,50000000.0
-Piotr Zielinski,Poland,27,17,5,0,2,0,0,0,3,12,50000000.0
-Christopher Nkunku,France,24,20,13,0,9,0,0,0,1,7,47000000.0
-Tanguy Ndombélé,France,24,12,2,0,0,2,0,0,4,6,45000000.0
-Fabián Ruiz,Spain,25,17,4,0,3,2,0,0,1,5,45000000.0
-Lorenzo Pellegrini,Italy,25,18,8,0,3,2,0,0,1,6,45000000.0
-Jorginho,Italy,29,18,4,0,1,1,0,0,3,6,45000000.0
-Mateo Kovacic,Croatia,27,13,1,0,5,1,0,0,1,3,45000000.0
-Giovanni Reyna,United States,19,5,2,0,1,0,0,0,0,5,42000000.0
-Tomas Soucek,Czech Republic,26,21,2,1,1,2,0,0,2,3,42000000.0
-Rúben Neves,Portugal,24,15,1,0,0,6,0,0,2,1,42000000.0
-Carlos Soler,Spain,24,12,6,0,2,3,0,0,3,5,40000000.0
-Kalvin Phillips,England,25,13,1,0,1,2,0,0,0,1,40000000.0
-Mikel Merino,Spain,25,20,3,0,2,4,0,0,0,4,40000000.0
-Martin Ødegaard,Norway,22,12,1,0,1,1,0,0,4,4,40000000.0
-Rodrigo de Paul,Argentina,27,18,0,0,2,2,0,0,7,7,40000000.0
-Thomas Partey,Ghana,28,10,1,0,0,2,0,0,1,5,40000000.0
-Thomas Lemar,France,26,12,3,0,2,2,0,0,2,9,40000000.0
-Pierre-Emile Höjbjerg,Denmark,26,19,3,0,1,0,0,0,5,2,40000000.0
-Marcelo Brozovic,Croatia,29,19,1,0,2,3,0,0,0,6,40000000.0
-Saúl Ñíguez,Spain,27,9,0,0,1,0,0,0,4,2,40000000.0
-Luis Alberto,Spain,29,19,2,0,4,4,0,0,4,9,40000000.0
-Ilkay Gündogan,Germany,31,15,3,0,2,1,0,0,2,3,40000000.0
-Ismaël Bennacer,Algeria,23,19,1,0,1,2,0,0,10,5,38000000.0
-Hakim Ziyech,Morocco,28,13,2,0,3,2,0,0,3,7,38000000.0
-Douglas Luiz,Brazil,23,9,0,0,2,3,0,0,1,3,35000000.0
-Lucas Paquetá,Brazil,24,19,7,0,3,3,0,0,6,5,35000000.0
-Aurélien Tchouaméni,France,21,22,2,0,0,5,0,0,2,4,35000000.0
-Harvey Barnes,England,23,16,3,0,3,2,0,0,2,7,35000000.0
-Houssem Aouar,France,23,18,5,0,2,0,0,0,1,6,35000000.0
-Arthur,Brazil,25,7,0,0,0,2,0,0,6,1,35000000.0
-Scott McTominay,Scotland,24,15,0,0,0,3,0,0,2,5,35000000.0
-Angeliño,Spain,24,16,0,0,5,3,0,1,1,3,35000000.0
-Robin Gosens,Germany,27,8,2,0,1,2,0,0,1,4,35000000.0
-Manuel Locatelli,Italy,23,19,2,0,2,3,0,0,4,6,35000000.0
-Ryan Gravenberch,Netherlands,19,20,1,0,1,2,0,0,1,7,33000000.0
-Jordan Veretout,France,28,18,4,0,4,6,0,0,1,8,33000000.0
-Naby Keïta,Guinea,26,10,3,0,1,0,0,0,2,7,32000000.0
-James Ward-Prowse,England,27,13,2,0,2,2,1,0,1,2,32000000.0
-Marcel Sabitzer,Austria,27,14,0,0,0,1,0,0,11,3,32000000.0
-Bruno Guimarães,Brazil,24,18,0,0,5,2,0,0,2,8,30000000.0
-Curtis Jones,England,20,10,1,0,4,0,0,0,4,4,30000000.0
-Rodrigo Bentancur,Uruguay,24,14,0,0,3,1,0,0,3,9,30000000.0
-Nikola Vlasic,Croatia,24,16,0,0,2,0,0,0,7,8,30000000.0
-Joan Jordán,Spain,27,19,1,0,1,3,0,0,4,13,30000000.0
-Renato Sanches,Portugal,24,10,0,0,1,2,0,0,3,4,30000000.0
-Dele Alli,England,25,14,2,0,1,2,0,0,4,4,30000000.0
-Ruslan Malinovskyi,Ukraine,28,19,3,0,1,4,0,0,5,13,30000000.0
-John McGinn,Scotland,27,12,3,0,1,4,0,0,0,1,30000000.0
-Adrien Rabiot,France,26,14,0,0,1,1,0,0,1,6,30000000.0
-Leander Dendoncker,Belgium,26,11,1,0,3,1,0,0,6,0,30000000.0
-Hakan Calhanoglu,Turkey,27,15,4,0,4,3,0,0,2,12,30000000.0
-Jesús Corona,Mexico,28,11,0,0,2,1,0,0,5,3,30000000.0
-Georginio Wijnaldum,Netherlands,31,18,2,0,1,0,0,0,9,6,30000000.0
-Toni Kroos,Germany,31,11,2,0,2,2,0,0,1,3,30000000.0
-Boubacar Kamara,France,22,15,1,0,0,4,0,0,3,3,28000000.0
-Emile Smith Rowe,England,21,17,6,0,2,0,0,0,2,6,28000000.0
-Boubakary Soumaré,France,22,18,0,0,1,2,0,0,5,6,28000000.0
-Florian Neuhaus,Germany,24,13,2,0,0,1,0,0,6,5,28000000.0
-Aleksandr Golovin,Russia,25,18,3,0,4,3,1,0,7,9,28000000.0
-Sandro Tonali,Italy,21,23,2,0,7,4,0,0,5,9,27000000.0
-Denis Zakaria,Switzerland,25,13,2,0,1,5,0,0,1,0,27000000.0
-Xaver Schlager,Austria,24,4,0,0,1,1,0,0,0,3,27000000.0
-Konrad Laimer,Austria,24,15,1,0,0,0,0,0,8,6,26000000.0
-Emre Can,Germany,27,9,2,0,0,0,1,0,5,3,26000000.0
-Gavi,Spain,17,21,0,0,1,6,1,0,6,12,25000000.0
-Ilaix Moriba,Guinea,18,5,0,0,0,1,0,0,5,0,25000000.0
-Silas Katompa Mvumpa,DR Congo,23,1,0,0,0,0,0,0,1,0,25000000.0
-Luis Díaz,Colombia,24,19,12,0,2,3,0,0,2,11,25000000.0
-Yves Bissouma,Mali,25,10,0,0,1,3,0,0,1,2,25000000.0
-Daichi Kamada,Japan,25,18,3,0,1,0,0,0,4,5,25000000.0
-André Zambo Anguissa,Cameroon,26,18,0,0,0,4,0,0,4,4,25000000.0
-Weston McKennie,United States,23,16,2,0,0,0,0,0,4,4,25000000.0
-Ridle Baku,Germany,23,19,4,0,1,3,0,0,2,9,25000000.0
-Donny van de Beek,Netherlands,24,8,1,0,0,1,0,0,5,2,25000000.0
-Nabil Fekir,France,28,18,3,0,4,6,1,0,0,10,25000000.0
-Remo Freuler,Switzerland,29,17,1,0,1,3,0,0,1,4,25000000.0
-Abdoulaye Doucouré,France,28,10,2,0,4,3,0,0,1,0,25000000.0
-Thiago,Spain,30,10,2,0,1,0,0,0,5,5,25000000.0
-Amadou Haidara,Mali,23,17,3,0,0,1,0,0,5,7,24000000.0
-Otávio,Portugal,26,20,3,0,6,5,0,0,1,15,24000000.0
-Rayan Cherki,France,18,20,8,0,3,2,0,0,10,8,23000000.0
-Brahim Díaz,Spain,22,14,4,0,2,3,0,0,1,12,23000000.0
-Mario Pasalic,Croatia,26,19,5,0,7,2,0,0,6,11,23000000.0
-Marten de Roon,Netherlands,30,15,1,0,0,3,0,0,0,1,23000000.0
-Mattéo Guendouzi,France,22,19,3,0,3,3,0,0,1,5,22000000.0
-Giovani Lo Celso,Argentina,25,14,1,0,1,0,0,0,6,4,22000000.0
-Guido Rodríguez,Argentina,27,17,0,0,2,2,0,1,4,1,22000000.0
-Joe Willock,England,22,12,0,0,0,0,0,0,3,7,22000000.0
-Todd Cantwell,England,23,8,1,0,0,2,0,0,2,2,22000000.0
-Christoph Baumgartner,Austria,22,10,3,0,1,2,0,0,2,7,22000000.0
-Orel Mangala,Belgium,23,10,1,0,2,2,0,0,2,5,22000000.0
-Fred,Brazil,28,14,1,1,0,4,0,0,1,6,22000000.0
-Leandro Paredes,Argentina,27,6,0,0,1,2,0,0,2,2,22000000.0
-Jesse Lingard,England,28,10,2,0,1,0,0,0,9,1,22000000.0
-Allan,Brazil,30,13,0,0,1,1,0,0,0,3,22000000.0
-Granit Xhaka,Switzerland,29,5,0,0,0,0,1,0,0,2,22000000.0
-João Palhinha,Portugal,26,20,2,0,0,6,0,0,2,6,21000000.0
-Thiago Almada,Argentina,20,19,4,0,4,1,0,0,1,13,20000000.0
-Sofiane Diop,France,21,28,8,0,7,4,0,0,9,13,20000000.0
-Pape Sarr,Senegal,19,15,0,0,1,3,0,0,4,4,20000000.0
-Enock Mwepu,Zambia,23,8,2,0,2,1,0,0,4,3,20000000.0
-Eberechi Eze,England,23,3,0,0,0,0,0,0,1,2,20000000.0
-Martín Zubimendi,Spain,22,20,0,0,1,4,0,0,4,2,20000000.0
-Hamed Junior Traorè,Cote d'Ivoire,21,13,1,0,2,1,0,0,8,5,20000000.0
-Yusuf Yazici,Turkey,24,18,1,0,1,4,0,0,13,5,20000000.0
-Pablo Fornals,Spain,25,20,4,0,2,3,0,0,6,5,20000000.0
-Gerson,Brazil,24,16,1,0,2,1,0,0,5,8,20000000.0
-Tyler Adams,United States,22,15,0,0,0,5,0,0,4,4,20000000.0
-Matteo Pessina,Italy,24,12,1,0,0,0,0,0,4,7,20000000.0
-Jeff Reine-Adélaïde,France,23,0,0,0,0,0,0,0,0,0,20000000.0
-Dani Ceballos,Spain,25,1,0,0,0,0,0,0,0,1,20000000.0
-Nahitan Nández,Uruguay,25,13,0,0,2,3,0,0,1,1,20000000.0
-Gaetano Castrovilli,Italy,24,11,0,0,1,3,0,0,6,5,20000000.0
-Mauro Arambarri,Uruguay,26,12,0,0,2,3,0,0,0,3,20000000.0
-Harry Winks,England,25,8,0,0,1,1,0,0,2,1,20000000.0
-André Gomes,Portugal,28,5,0,0,1,1,0,0,4,1,20000000.0
-Bryan Cristante,Italy,26,18,2,0,1,4,0,0,3,0,20000000.0
-Julian Weigl,Germany,26,21,3,0,5,4,0,0,4,5,20000000.0
-Julian Brandt,Germany,25,16,2,0,4,0,0,0,3,8,20000000.0
-Tiemoué Bakayoko,France,27,8,0,0,0,3,0,0,7,2,20000000.0
-Filip Kostic,Serbia,29,16,3,0,7,1,0,0,1,2,20000000.0
-James Rodríguez,Colombia,30,3,1,0,1,0,0,0,0,1,20000000.0
-Philippe Coutinho,Brazil,29,13,2,0,0,1,0,0,9,4,20000000.0
-Sergio Canales,Spain,30,18,2,0,3,1,0,0,3,8,20000000.0
-Jordan Henderson,England,31,18,2,0,3,1,0,0,4,5,20000000.0
-Maximilian Arnold,Germany,27,19,1,0,2,4,0,0,1,0,19000000.0
-Wendel,Brazil,24,21,4,0,2,4,0,0,0,13,18000000.0
-Nicolás De La Cruz,Uruguay,24,11,4,0,1,1,0,0,2,3,18000000.0
-Yangel Herrera,Venezuela,23,6,1,0,0,1,0,0,3,2,18000000.0
-Sander Berge,Norway,23,7,1,0,0,0,0,0,2,1,18000000.0
-Manuel Lazzari,Italy,28,16,1,0,0,2,0,0,7,4,18000000.0
-Lucas Torreira,Uruguay,25,11,0,0,0,1,0,0,2,7,18000000.0
-Tom Davies,England,23,7,1,0,1,0,0,0,4,1,18000000.0
-Renato Tapia,Peru,26,12,0,0,0,6,0,0,2,7,18000000.0
-Wilmar Barrios,Colombia,28,18,0,0,1,2,0,0,1,4,18000000.0
-Giorgian de Arrascaeta,Uruguay,27,0,0,0,0,0,0,0,0,0,18000000.0
-Ruben Loftus-Cheek,England,25,13,0,0,3,1,0,0,8,1,18000000.0
-Mahmoud Dahoud,Germany,25,12,0,0,1,3,0,1,1,3,18000000.0
-Alex Oxlade-Chamberlain,England,28,15,0,0,2,0,0,0,8,6,18000000.0
-Kerem Demirbay,Germany,28,19,3,0,2,5,1,0,3,4,18000000.0
-Oscar,Brazil,30,0,0,0,0,0,0,0,0,0,18000000.0
-Miralem Pjanic,Bosnia-Herzegovina,31,11,0,0,4,2,0,0,1,6,18000000.0
-Miguel Almirón,Paraguay,27,12,0,0,0,1,0,0,4,4,17500000.0
-Edson Álvarez,Mexico,24,18,2,0,0,5,0,0,0,6,17000000.0
-Eljif Elmas,North Macedonia,22,19,3,0,2,3,0,0,11,5,17000000.0
-Maxence Caqueret,France,21,25,1,0,1,3,0,0,4,4,17000000.0
-Davy Klaassen,Netherlands,28,16,3,0,0,1,0,0,9,5,17000000.0
-Ross Barkley,England,27,8,0,0,0,0,0,0,6,2,17000000.0
-Sérgio Oliveira,Portugal,29,17,4,0,1,3,0,0,9,8,17000000.0
-Teun Koopmeiners,Netherlands,23,20,0,0,2,2,0,0,9,4,16500000.0
-Reinier,Brazil,19,10,1,0,0,0,0,0,8,1,16000000.0
-Youssouf Fofana,France,22,22,1,0,3,5,1,0,5,5,16000000.0
-Mohamed Camara,Mali,21,21,0,0,3,8,0,0,1,8,16000000.0
-Albert Sambi Lokonga,Belgium,22,14,0,0,0,4,0,0,4,3,16000000.0
-Philip Billing,Denmark,25,19,8,0,3,5,0,0,0,4,16000000.0
-Ainsley Maitland-Niles,England,24,11,0,0,1,0,0,0,7,1,16000000.0
-Florian Grillitsch,Austria,26,10,0,0,0,4,0,0,1,1,16000000.0
-Morgan Sanson,France,27,2,0,0,1,0,0,0,0,2,16000000.0
-Danilo Pereira,Portugal,30,18,1,0,0,3,0,0,7,0,16000000.0
-Hans Vanaken,Belgium,29,21,8,0,2,0,0,0,3,1,16000000.0
-Dennis Praet,Belgium,27,8,1,0,1,1,0,0,3,4,16000000.0
-Diego Demme,Germany,30,6,0,0,0,2,0,0,4,1,16000000.0
-Michael Olise,France,19,10,1,0,3,2,0,0,7,3,15000000.0
-Matheus Henrique,Brazil,23,7,0,0,2,0,0,0,6,1,15000000.0
-Mohammed Kudus,Ghana,21,7,2,0,0,0,0,0,4,3,15000000.0
-Conor Gallagher,England,21,17,5,0,4,4,0,0,0,5,15000000.0
-Mady Camara,Guinea,24,19,2,0,1,4,1,0,2,13,15000000.0
-Billy Gilmour,Scotland,20,8,0,0,1,1,0,0,1,2,15000000.0
-Ibrahima Diallo,France,22,13,1,0,1,2,0,0,7,1,15000000.0
-Oliver Skipp,England,21,21,0,0,0,5,0,0,3,5,15000000.0
-Exequiel Palacios,Argentina,23,14,1,0,1,2,0,0,5,7,15000000.0
-Sean Longstaff,England,24,12,1,0,0,1,0,0,3,3,15000000.0
-Riqui Puig,Spain,22,7,0,0,0,0,0,0,7,0,15000000.0
-Razvan Marin,Romania,25,15,1,0,3,3,0,0,0,2,15000000.0
-Ludovic Blas,France,23,14,7,0,0,4,0,0,0,6,15000000.0
-Baptiste Santamaria,France,26,20,0,0,2,4,0,0,7,5,15000000.0
-Carles Aleñá,Spain,23,14,0,0,2,4,1,0,0,12,15000000.0
-Mattia Zaccagni,Italy,26,12,2,0,1,3,0,0,5,3,15000000.0
-Nemanja Maksimovic,Serbia,26,17,0,0,1,3,0,0,0,4,15000000.0
-Benjamin Bourigeaud,France,27,22,0,0,7,2,0,0,0,14,15000000.0
-Jefferson Lerma,Colombia,27,16,0,0,1,3,1,0,1,2,15000000.0
-Nadiem Amiri,Germany,25,17,2,0,2,0,0,0,12,4,15000000.0
+Name,Nationality,Age,Games Played,Goals,Own Goals,Assists,Yellow Cards,Red Cards,Second Yellow,Subbed On,Subbed Off,Value,Transfer Fee,
+Kevin De Bruyne,Belgium,30,14,3,0,1,1,0,0,4,6,100000000.0,76000000.0
+Frenkie de Jong,Netherlands,24,16,1,0,2,3,0,1,0,2,90000000.0,86000000.0
+Bruno Fernandes,Portugal,27,21,5,0,9,4,0,0,4,6,90000000.0,63000000.0
+Joshua Kimmich,Germany,26,18,3,0,4,1,0,0,0,3,90000000.0,8500000.0
+Pedri,Spain,19,5,0,0,0,0,0,0,1,2,80000000.0,20000000.0
+Phil Foden,England,21,14,5,0,4,0,0,0,4,4,80000000.0,0.0
+Marcos Llorente,Spain,26,14,0,0,1,2,0,0,1,3,80000000.0,30000000.0
+Mason Mount,England,22,16,3,0,2,0,0,0,8,4,75000000.0,0.0
+Jude Bellingham,England,18,20,3,0,7,4,0,0,0,6,70000000.0,23000000
+Declan Rice,England,22,17,3,0,3,5,0,0,0,2,70000000.0,0.0
+Rodri,Spain,25,17,2,0,0,3,0,0,1,2,70000000.0,62700000.0
+Kai Havertz,Germany,22,17,4,0,2,0,0,0,5,6,70000000.0,80000000.0
+Sergej Milinković-Savić,Serbia,26,20,4,0,4,4,0,0,6,8,70000000.0,12000000.0
+Bernardo Silva,Portugal,27,19,4,0,2,3,0,0,2,6,70000000.0,50000000.0
+Leon Goretzka,Germany,26,17,2,0,2,0,0,0,0,8,70000000.0,3250000.0
+Casemiro,Brazil,29,18,0,0,2,5,0,0,1,3,70000000.0,6000000.0
+Florian Wirtz,Germany,18,17,8,0,9,2,0,0,4,11,65000000.0,200000.0
+Bukayo Saka,England,20,15,3,0,2,1,0,0,2,8,65000000.0,0.0
+Federico Valverde,Uruguay,23,13,0,0,1,0,0,0,3,4,65000000.0,5000000.0
+Nicolò Barella,Italy,24,19,1,0,6,3,0,0,0,11,65000000.0,32500000.0
+Wilfred Ndidi,Nigeria,24,14,1,0,0,2,0,1,1,0,60000000.0,17600000.0
+Fabinho,Brazil,28,14,1,0,1,3,0,0,3,2,60000000.0,45000000.0
+Paul Pogba,France,28,13,0,0,7,4,1,0,3,4,60000000.0,105000000.0
+Koke,Spain,29,16,0,0,1,3,0,0,0,4,60000000.0,0.0
+Eduardo Camavinga,France,19,23,2,0,1,6,0,0,13,6,55000000.0,31000000.0
+Franck Kessié,Cote d'Ivoire,24,15,2,0,1,1,0,1,3,3,55000000.0,24000000.0
+Youri Tielemans,Belgium,24,17,3,0,3,2,0,0,1,3,55000000.0,45000000.0
+N'Golo Kanté,France,30,12,2,0,0,1,0,0,2,8,55000000.0,35800000.0
+Marco Verratti,Italy,29,8,0,0,0,5,0,0,0,6,55000000.0,12000000.0
+Jamal Musiala,Germany,18,18,4,0,4,0,0,0,14,4,50000000.0,0.0
+James Maddison,England,25,19,3,0,4,1,0,0,7,11,50000000.0,25000000.0
+Dani Olmo,Spain,23,7,0,0,1,0,0,0,3,4,50000000.0,22000000.0
+Piotr Zielinski,Poland,27,17,5,0,2,0,0,0,3,12,50000000.0,16000000.0
+Christopher Nkunku,France,24,20,13,0,9,0,0,0,1,7,47000000.0,13000000.0
+Tanguy Ndombélé,France,24,12,2,0,0,2,0,0,4,6,45000000.0,60000000.0
+Fabián Ruiz,Spain,25,17,4,0,3,2,0,0,1,5,45000000.0,30000000.0
+Lorenzo Pellegrini,Italy,25,18,8,0,3,2,0,0,1,6,45000000.0,10000000.0
+Jorginho,Italy,29,18,4,0,1,1,0,0,3,6,45000000.0,57000000.0
+Mateo Kovacic,Croatia,27,13,1,0,5,1,0,0,1,3,45000000.0,45000000.0
+Giovanni Reyna,United States,19,5,2,0,1,0,0,0,0,5,42000000.0,0.0
+Tomas Soucek,Czech Republic,26,21,2,1,1,2,0,0,2,3,42000000.0,16200000.0
+Rúben Neves,Portugal,24,15,1,0,0,6,0,0,2,1,42000000.0,17900000.0
+Carlos Soler,Spain,24,12,6,0,2,3,0,0,3,5,40000000.0,0.0
+Kalvin Phillips,England,25,13,1,0,1,2,0,0,0,1,40000000.0,0.0
+Mikel Merino,Spain,25,20,3,0,2,4,0,0,0,4,40000000.0,12000000.0
+Martin Ødegaard,Norway,22,12,1,0,1,1,0,0,4,4,40000000.0,35000000.0
+Rodrigo de Paul,Argentina,27,18,0,0,2,2,0,0,7,7,40000000.0,35000000.0
+Thomas Partey,Ghana,28,10,1,0,0,2,0,0,1,5,40000000.0,50000000.0
+Thomas Lemar,France,26,12,3,0,2,2,0,0,2,9,40000000.0,72000000.0
+Pierre-Emile Höjbjerg,Denmark,26,19,3,0,1,0,0,0,5,2,40000000.0,16600000.0
+Marcelo Brozovic,Croatia,29,19,1,0,2,3,0,0,0,6,40000000.0,5000000.0
+Saúl Ñíguez,Spain,27,9,0,0,1,0,0,0,4,2,40000000.0,0.0
+Luis Alberto,Spain,29,19,2,0,4,4,0,0,4,9,40000000.0,4000000.0
+Ilkay Gündogan,Germany,31,15,3,0,2,1,0,0,2,3,40000000.0,27000000.0
+Ismaël Bennacer,Algeria,23,19,1,0,1,2,0,0,10,5,38000000.0,17200000.0
+Hakim Ziyech,Morocco,28,13,2,0,3,2,0,0,3,7,38000000.0,40000000.0
+Douglas Luiz,Brazil,23,9,0,0,2,3,0,0,1,3,35000000.0,16800000.0
+Lucas Paquetá,Brazil,24,19,7,0,3,3,0,0,6,5,35000000.0,20000000.0
+Aurélien Tchouaméni,France,21,22,2,0,0,5,0,0,2,4,35000000.0,18000000.0
+Harvey Barnes,England,23,16,3,0,3,2,0,0,2,7,35000000.0,0.0
+Houssem Aouar,France,23,18,5,0,2,0,0,0,1,6,35000000.0,0.0
+Arthur,Brazil,25,7,0,0,0,2,0,0,6,1,35000000.0,72000000.0
+Scott McTominay,Scotland,24,15,0,0,0,3,0,0,2,5,35000000.0,0.0
+Angeliño,Spain,24,16,0,0,5,3,0,1,1,3,35000000.0,18000000.0
+Robin Gosens,Germany,27,8,2,0,1,2,0,0,1,4,35000000.0,1170000.0
+Manuel Locatelli,Italy,23,19,2,0,2,3,0,0,4,6,35000000.0,0.0
+Ryan Gravenberch,Netherlands,19,20,1,0,1,2,0,0,1,7,33000000.0,0.0
+Jordan Veretout,France,28,18,4,0,4,6,0,0,1,8,33000000.0,17500000.0
+Naby Keïta,Guinea,26,10,3,0,1,0,0,0,2,7,32000000.0,60000000.0
+James Ward-Prowse,England,27,13,2,0,2,2,1,0,1,2,32000000.0,0.0
+Marcel Sabitzer,Austria,27,14,0,0,0,1,0,0,11,3,32000000.0,15000000.0
+Bruno Guimarães,Brazil,24,18,0,0,5,2,0,0,2,8,30000000.0,20000000.0
+Curtis Jones,England,20,10,1,0,4,0,0,0,4,4,30000000.0,0.0
+Rodrigo Bentancur,Uruguay,24,14,0,0,3,1,0,0,3,9,30000000.0,14700000.0
+Nikola Vlasic,Croatia,24,16,0,0,2,0,0,0,7,8,30000000.0,30000000.0
+Joan Jordán,Spain,27,19,1,0,1,3,0,0,4,13,30000000.0,14000000.0
+Renato Sanches,Portugal,24,10,0,0,1,2,0,0,3,4,30000000.0,20000000.0
+Dele Alli,England,25,14,2,0,1,2,0,0,4,4,30000000.0,0.0
+Ruslan Malinovskyi,Ukraine,28,19,3,0,1,4,0,0,5,13,30000000.0,13600000.0
+John McGinn,Scotland,27,12,3,0,1,4,0,0,0,1,30000000.0,3100000.0
+Adrien Rabiot,France,26,14,0,0,1,1,0,0,1,6,30000000.0,0.0
+Leander Dendoncker,Belgium,26,11,1,0,3,1,0,0,6,0,30000000.0,13800000.0
+Hakan Calhanoglu,Turkey,27,15,4,0,4,3,0,0,2,12,30000000.0,0.0
+Jesús Corona,Mexico,28,11,0,0,2,1,0,0,5,3,30000000.0,10500000.0
+Georginio Wijnaldum,Netherlands,31,18,2,0,1,0,0,0,9,6,30000000.0,0.0
+Toni Kroos,Germany,31,11,2,0,2,2,0,0,1,3,30000000.0,25000000.0
+Boubacar Kamara,France,22,15,1,0,0,4,0,0,3,3,28000000.0,0.0
+Emile Smith Rowe,England,21,17,6,0,2,0,0,0,2,6,28000000.0,0.0
+Boubakary Soumaré,France,22,18,0,0,1,2,0,0,5,6,28000000.0,20000000.0
+Florian Neuhaus,Germany,24,13,2,0,0,1,0,0,6,5,28000000.0,0.0
+Aleksandr Golovin,Russia,25,18,3,0,4,3,1,0,7,9,28000000.0,30000000.0
+Sandro Tonali,Italy,21,23,2,0,7,4,0,0,5,9,27000000.0,6900000.0
+Denis Zakaria,Switzerland,25,13,2,0,1,5,0,0,1,0,27000000.0,12000000.0
+Xaver Schlager,Austria,24,4,0,0,1,1,0,0,0,3,27000000.0,15000000.0
+Konrad Laimer,Austria,24,15,1,0,0,0,0,0,8,6,26000000.0,7000000.0
+Emre Can,Germany,27,9,2,0,0,0,1,0,5,3,26000000.0,25000000.0
+Gavi,Spain,17,21,0,0,1,6,1,0,6,12,25000000.0,0.0
+Ilaix Moriba,Guinea,18,5,0,0,0,1,0,0,5,0,25000000.0,16000000.0
+Silas Katompa Mvumpa,DR Congo,23,1,0,0,0,0,0,0,1,0,25000000.0,8000000.0
+Luis Díaz,Colombia,24,19,12,0,2,3,0,0,2,11,25000000.0,7220000.0
+Yves Bissouma,Mali,25,10,0,0,1,3,0,0,1,2,25000000.0,16900000.0
+Daichi Kamada,Japan,25,18,3,0,1,0,0,0,4,5,25000000.0,0.0
+André Zambo Anguissa,Cameroon,26,18,0,0,0,4,0,0,4,4,25000000.0,0.0
+Weston McKennie,United States,23,16,2,0,0,0,0,0,4,4,25000000.0,20500000.0
+Ridle Baku,Germany,23,19,4,0,1,3,0,0,2,9,25000000.0,10000000.0
+Donny van de Beek,Netherlands,24,8,1,0,0,1,0,0,5,2,25000000.0,39000000.0
+Nabil Fekir,France,28,18,3,0,4,6,1,0,0,10,25000000.0,19750000.0
+Remo Freuler,Switzerland,29,17,1,0,1,3,0,0,1,4,25000000.0,2100000.0
+Abdoulaye Doucouré,France,28,10,2,0,4,3,0,0,1,0,25000000.0,22100000.0
+Thiago,Spain,30,10,2,0,1,0,0,0,5,5,25000000.0,22000000.0
+Amadou Haidara,Mali,23,17,3,0,0,1,0,0,5,7,24000000.0,19000000.0
+Otávio,Portugal,26,20,3,0,6,5,0,0,1,15,24000000.0,0.0
+Rayan Cherki,France,18,20,8,0,3,2,0,0,10,8,23000000.0,0.0
+Brahim Díaz,Spain,22,14,4,0,2,3,0,0,1,12,23000000.0,0.0
+Mario Pasalic,Croatia,26,19,5,0,7,2,0,0,6,11,23000000.0,14500000.0
+Marten de Roon,Netherlands,30,15,1,0,0,3,0,0,0,1,23000000.0,16700000.0
+Mattéo Guendouzi,France,22,19,3,0,3,3,0,0,1,5,22000000.0,0.0
+Giovani Lo Celso,Argentina,25,14,1,0,1,0,0,0,6,4,22000000.0,32000000.0
+Guido Rodríguez,Argentina,27,17,0,0,2,2,0,1,4,1,22000000.0,3000000.0
+Joe Willock,England,22,12,0,0,0,0,0,0,3,7,22000000.0,29400000.0
+Todd Cantwell,England,23,8,1,0,0,2,0,0,2,2,22000000.0,0.0
+Christoph Baumgartner,Austria,22,10,3,0,1,2,0,0,2,7,22000000.0,0.0
+Orel Mangala,Belgium,23,10,1,0,2,2,0,0,2,5,22000000.0,0.0
+Fred,Brazil,28,14,1,1,0,4,0,0,1,6,22000000.0,59000000.0
+Leandro Paredes,Argentina,27,6,0,0,1,2,0,0,2,2,22000000.0,40000000.0
+Jesse Lingard,England,28,10,2,0,1,0,0,0,9,1,22000000.0,0.0
+Allan,Brazil,30,13,0,0,1,1,0,0,0,3,22000000.0,25000000.0
+Granit Xhaka,Switzerland,29,5,0,0,0,0,1,0,0,2,22000000.0,45000000.0
+João Palhinha,Portugal,26,20,2,0,0,6,0,0,2,6,21000000.0,0.0
+Thiago Almada,Argentina,20,19,4,0,4,1,0,0,1,13,20000000.0,0.0
+Sofiane Diop,France,21,28,8,0,7,4,0,0,9,13,20000000.0,0.0
+Pape Sarr,Senegal,19,15,0,0,1,3,0,0,4,4,20000000.0,0.0
+Enock Mwepu,Zambia,23,8,2,0,2,1,0,0,4,3,20000000.0,23000000.0
+Eberechi Eze,England,23,3,0,0,0,0,0,0,1,2,20000000.0,17800000.0
+Martín Zubimendi,Spain,22,20,0,0,1,4,0,0,4,2,20000000.0,0.0
+Hamed Junior Traorè,Cote d'Ivoire,21,13,1,0,2,1,0,0,8,5,20000000.0,16000000.0
+Yusuf Yazici,Turkey,24,18,1,0,1,4,0,0,13,5,20000000.0,17500000.0
+Pablo Fornals,Spain,25,20,4,0,2,3,0,0,6,5,20000000.0,28000000.0
+Gerson,Brazil,24,16,1,0,2,1,0,0,5,8,20000000.0,25000000.0
+Tyler Adams,United States,22,15,0,0,0,5,0,0,4,4,20000000.0,2630000.0
+Matteo Pessina,Italy,24,12,1,0,0,0,0,0,4,7,20000000.0,0.0
+Jeff Reine-Adélaïde,France,23,0,0,0,0,0,0,0,0,0,20000000.0,0.0
+Dani Ceballos,Spain,25,1,0,0,0,0,0,0,0,1,20000000.0,0.0
+Nahitan Nández,Uruguay,25,13,0,0,2,3,0,0,1,1,20000000.0,17000000.0
+Gaetano Castrovilli,Italy,24,11,0,0,1,3,0,0,6,5,20000000.0,0.0
+Mauro Arambarri,Uruguay,26,12,0,0,2,3,0,0,0,3,20000000.0,2150000.0
+Harry Winks,England,25,8,0,0,1,1,0,0,2,1,20000000.0,0.0
+André Gomes,Portugal,28,5,0,0,1,1,0,0,4,1,20000000.0,25000000.0
+Bryan Cristante,Italy,26,18,2,0,1,4,0,0,3,0,20000000.0,22000000.0
+Julian Weigl,Germany,26,21,3,0,5,4,0,0,4,5,20000000.0,20000000.0
+Julian Brandt,Germany,25,16,2,0,4,0,0,0,3,8,20000000.0,25000000.0
+Tiemoué Bakayoko,France,27,8,0,0,0,3,0,0,7,2,20000000.0,0.0
+Filip Kostic,Serbia,29,16,3,0,7,1,0,0,1,2,20000000.0,6000000.0
+James Rodríguez,Colombia,30,3,1,0,1,0,0,0,0,1,20000000.0,8000000.0
+Philippe Coutinho,Brazil,29,13,2,0,0,1,0,0,9,4,20000000.0,0.0
+Sergio Canales,Spain,30,18,2,0,3,1,0,0,3,8,20000000.0,0.0
+Jordan Henderson,England,31,18,2,0,3,1,0,0,4,5,20000000.0,18000000.0
+Maximilian Arnold,Germany,27,19,1,0,2,4,0,0,1,0,19000000.0,0.0
+Wendel,Brazil,24,21,4,0,2,4,0,0,0,13,18000000.0,20300000.0
+Nicolás De La Cruz,Uruguay,24,11,4,0,1,1,0,0,2,3,18000000.0,2600000.0
+Yangel Herrera,Venezuela,23,6,1,0,0,1,0,0,3,2,18000000.0,0.0
+Sander Berge,Norway,23,7,1,0,0,0,0,0,2,1,18000000.0,23000000.0
+Manuel Lazzari,Italy,28,16,1,0,0,2,0,0,7,4,18000000.0,15000000.0
+Lucas Torreira,Uruguay,25,11,0,0,0,1,0,0,2,7,18000000.0,0.0
+Tom Davies,England,23,7,1,0,1,0,0,0,4,1,18000000.0,0.0
+Renato Tapia,Peru,26,12,0,0,0,6,0,0,2,7,18000000.0,0.0
+Wilmar Barrios,Colombia,28,18,0,0,1,2,0,0,1,4,18000000.0,15000000.0
+Giorgian de Arrascaeta,Uruguay,27,0,0,0,0,0,0,0,0,0,18000000.0,14800000.0
+Ruben Loftus-Cheek,England,25,13,0,0,3,1,0,0,8,1,18000000.0,0.0
+Mahmoud Dahoud,Germany,25,12,0,0,1,3,0,1,1,3,18000000.0,12000000.0
+Alex Oxlade-Chamberlain,England,28,15,0,0,2,0,0,0,8,6,18000000.0,38000000.0
+Kerem Demirbay,Germany,28,19,3,0,2,5,1,0,3,4,18000000.0,32000000.0
+Oscar,Brazil,30,0,0,0,0,0,0,0,0,0,18000000.0,60000000.0
+Miralem Pjanic,Bosnia-Herzegovina,31,11,0,0,4,2,0,0,1,6,18000000.0,0.0
+Miguel Almirón,Paraguay,27,12,0,0,0,1,0,0,4,4,17500000.0,24000000.0
+Edson Álvarez,Mexico,24,18,2,0,0,5,0,0,0,6,17000000.0,15000000.0
+Eljif Elmas,North Macedonia,22,19,3,0,2,3,0,0,11,5,17000000.0,16100000.0
+Maxence Caqueret,France,21,25,1,0,1,3,0,0,4,4,17000000.0,0.0
+Davy Klaassen,Netherlands,28,16,3,0,0,1,0,0,9,5,17000000.0,11700000.0
+Ross Barkley,England,27,8,0,0,0,0,0,0,6,2,17000000.0,0.0
+Sérgio Oliveira,Portugal,29,17,4,0,1,3,0,0,9,8,17000000.0,0.0
+Teun Koopmeiners,Netherlands,23,20,0,0,2,2,0,0,9,4,16500000.0,12000000.0
+Reinier,Brazil,19,10,1,0,0,0,0,0,8,1,16000000.0,0.0
+Youssouf Fofana,France,22,22,1,0,3,5,1,0,5,5,16000000.0,15000000.0
+Mohamed Camara,Mali,21,21,0,0,3,8,0,0,1,8,16000000.0,0.0
+Albert Sambi Lokonga,Belgium,22,14,0,0,0,4,0,0,4,3,16000000.0,17500000.0
+Philip Billing,Denmark,25,19,8,0,3,5,0,0,0,4,16000000.0,16500000.0
+Ainsley Maitland-Niles,England,24,11,0,0,1,0,0,0,7,1,16000000.0,0.0
+Florian Grillitsch,Austria,26,10,0,0,0,4,0,0,1,1,16000000.0,0.0
+Morgan Sanson,France,27,2,0,0,1,0,0,0,0,2,16000000.0,15800000.0
+Danilo Pereira,Portugal,30,18,1,0,0,3,0,0,7,0,16000000.0,16000000.0
+Hans Vanaken,Belgium,29,21,8,0,2,0,0,0,3,1,16000000.0,4250000.0
+Dennis Praet,Belgium,27,8,1,0,1,1,0,0,3,4,16000000.0,0.0
+Diego Demme,Germany,30,6,0,0,0,2,0,0,4,1,16000000.0,10250000.0
+Michael Olise,France,19,10,1,0,3,2,0,0,7,3,15000000.0,9300000.0
+Matheus Henrique,Brazil,23,7,0,0,2,0,0,0,6,1,15000000.0,10000000.0
+Mohammed Kudus,Ghana,21,7,2,0,0,0,0,0,4,3,15000000.0,9000000.0
+Conor Gallagher,England,21,17,5,0,4,4,0,0,0,5,15000000.0,0.0
+Mady Camara,Guinea,24,19,2,0,1,4,1,0,2,13,15000000.0,0.0
+Billy Gilmour,Scotland,20,8,0,0,1,1,0,0,1,2,15000000.0,0.0
+Ibrahima Diallo,France,22,13,1,0,1,2,0,0,7,1,15000000.0,12000000.0
+Oliver Skipp,England,21,21,0,0,0,5,0,0,3,5,15000000.0,0.0
+Exequiel Palacios,Argentina,23,14,1,0,1,2,0,0,5,7,15000000.0,17000000.0
+Sean Longstaff,England,24,12,1,0,0,1,0,0,3,3,15000000.0,0.0
+Riqui Puig,Spain,22,7,0,0,0,0,0,0,7,0,15000000.0,0.0
+Razvan Marin,Romania,25,15,1,0,3,3,0,0,0,2,15000000.0,10000000.0
+Ludovic Blas,France,23,14,7,0,0,4,0,0,0,6,15000000.0,8000000.0
+Baptiste Santamaria,France,26,20,0,0,2,4,0,0,7,5,15000000.0,14000000.0
+Carles Aleñá,Spain,23,14,0,0,2,4,1,0,0,12,15000000.0,5000000.0
+Mattia Zaccagni,Italy,26,12,2,0,1,3,0,0,5,3,15000000.0,0.0
+Nemanja Maksimovic,Serbia,26,17,0,0,1,3,0,0,0,4,15000000.0,10000000.0
+Benjamin Bourigeaud,France,27,22,0,0,7,2,0,0,0,14,15000000.0,3500000.0
+Jefferson Lerma,Colombia,27,16,0,0,1,3,1,0,1,2,15000000.0,28000000.0
+Nadiem Amiri,Germany,25,17,2,0,2,0,0,0,12,4,15000000.0,
 Matheus Pereira,Brazil,25,7,0,0,5,4,0,0,3,2,15000000.0
 Marko Grujic,Serbia,25,12,0,0,1,1,0,0,7,3,15000000.0
 Mateus Uribe,Colombia,30,16,2,0,1,5,0,0,1,7,15000000.0
