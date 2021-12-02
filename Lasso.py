@@ -22,39 +22,50 @@ X = np.column_stack((age,games_played,goals,own_goals,assists,yellow_cards,
 y = df.iloc[:,13]
 y = y/1000000   # divided by a million
 
-from sklearn.preprocessing import PolynomialFeatures
-xPoly = PolynomialFeatures(2).fit_transform(X)
-
-from sklearn.model_selection import train_test_split
-Xtrain,Xtest,yTrain,yTest = train_test_split(X,y,test_size=0.2)
+from sklearn.model_selection import KFold
+kf = KFold(n_splits=5)
 
 # from sklearn.preprocessing import PolynomialFeatures
-# xPoly = PolynomialFeatures(2).fit_transform(Xtrain)
+# xPoly = PolynomialFeatures(2).fit_transform(X)
 
-from sklearn.linear_model import Lasso
-# Choose C as 5
-model = Lasso(alpha=(1/(2*5)))
-model.fit(Xtrain,yTrain)
+C_range = [0.1,0.5,1,5,10,50,100,500]
+poly_range = [1,2,3,4]
 
-ypred=model.predict(Xtest)
+for Ci in C_range:
+#for poly_i in poly_range:
+    from sklearn.linear_model import Lasso
+    # 10 is optimum C value
+    model = Lasso(alpha=(1/2*Ci))
+    #model = Lasso(alpha=(1/(2*10)))
 
-from sklearn.metrics import mean_squared_error
-lasso_error = mean_squared_error(yTest,ypred)
-print("Lasso MSE: ",lasso_error)
+    from sklearn.preprocessing import PolynomialFeatures
+    xPoly = PolynomialFeatures(2).fit_transform(X)
+    #xPoly = PolynomialFeatures(poly_i).fit_transform(X)
 
-from sklearn.metrics import r2_score
-lasso_r2 = r2_score(yTest,ypred)
-print("Lasso R2 score: ",lasso_r2)
+    from sklearn.dummy import DummyRegressor
+    dum_model = DummyRegressor(strategy="mean")
 
-# dummy
-from sklearn.dummy import DummyRegressor
-dum_model = DummyRegressor(strategy="mean")
-dum_model.fit(Xtrain,yTrain)
-dum_pred=dum_model.predict(Xtest)
+    lasso_temp=[]; dum_temp=[]
+    for train,test in kf.split(xPoly):
+        model.fit(xPoly[train],y[train])
+    
+        ypred = model.predict(xPoly[test])
 
-dum_error = mean_squared_error(dum_pred,yTest)
-print("Dummy MSE: ",dum_error)
-dum_r2=r2_score(dum_pred,yTest)
-print("Dummy r2 Score: ",dum_r2)
+        from sklearn.metrics import mean_squared_error
+        lasso_temp.append(mean_squared_error(y[test],ypred))
 
+        dum_model.fit(xPoly[train],y[train])
 
+        dum_pred = dum_model.predict(y[test])
+
+        dum_temp.append(mean_squared_error(y[test],dum_pred))
+    print("Ci = ",Ci)
+    #print("poly_i = ",poly_i)
+    print("Lasso MSE: ",np.array(lasso_temp).mean())
+    print("Lasso MSE standard deviation",np.array(lasso_temp).std())
+
+    print("Dummy MSE: ",np.array(dum_temp).mean())
+    print("Dummy MSE standard deviation",np.array(dum_temp).std())
+    print()
+# Best C value is 10
+# Best poly value is 2
