@@ -3,28 +3,97 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 from sklearn.neighbors import KNeighborsRegressor
+from sklearn.model_selection import KFold
+from sklearn.dummy import DummyRegressor
+import matplotlib.pyplot as plt
+#csv_name="Defenders.csv"
+csv_name="Midfielders.csv"
 
-#Import Data
-df=pd.read_csv("Defenders.csv")
-# print(df.head())
-X1=df.iloc[:,2]     # Age
-X2=df.iloc[:,3]     # Games Played
-X3=df.iloc[:,4]     # Goals
-X4=df.iloc[:,5]     # Own Goals
-X5=df.iloc[:,6]     # Assists
-X6=df.iloc[:,7]     # Yellow Cards
-X7=df.iloc[:,8]     # Red Cards
-X8=df.iloc[:,9]     # Second Yellow
-X9=df.iloc[:,10]    # Subbed On 
-X10=df.iloc[:,11]   # Subbed Off
-X11=df.iloc[:,13]   # Transfer fees
-X11=X11/10000000    # reduce the size to make sure model is stable
-X=np.column_stack((X1,X2,X3,X4,X5,X6,X7,X8,X9,X10,X11))
-y=df.iloc[:,12]     # Market Value
-y=y/10000000        # reduce the size to make sure model is stable
+df=pd.read_csv(csv_name)
 
-#Split test and train data with ratio 20% / 80%
-Xtrain, Xtest, ytrain, ytest = train_test_split(X,y,test_size=0.2)
+age = df.iloc[:,2]
+games_played=df.iloc[:,3]
+goals = df.iloc[:,4]
+own_goals = df.iloc[:,5]
+assists = df.iloc[:,6]
+yellow_cards = df.iloc[:,7]
+red_cards=df.iloc[:,8]
+second_yellows=df.iloc[:,9]
+subbed_on = df.iloc[:,10]
+subbed_off=df.iloc[:,11]
+
+transfer_fees=df.iloc[:,12]
+transfer_fees = transfer_fees/1000000   # divided by a million
+
+X = np.column_stack((age,games_played,goals,own_goals,assists,yellow_cards,
+                    red_cards,second_yellows,subbed_on,subbed_off,transfer_fees))
+y = df.iloc[:,13]
+y = y/1000000   # divided by a million
+
+kf = KFold(n_splits=5,shuffle=True)
+neighbor_num = [1,2,3,4,5,6,7]
+mean_error=[]
+std_error=[]
+
+for neighbor in neighbor_num:
+
+    model = KNeighborsRegressor(n_neighbors=neighbor,weights='uniform')
+
+    knn_temp = []; dum_temp=[]
+    for train,test in kf.split(X):
+        model.fit(X[train],y[train])
+
+        ypred = model.predict(X[test])
+
+        knn_temp.append(mean_squared_error(y[test],ypred))
+
+        dum_model = DummyRegressor(strategy="mean")
+
+        dum_model.fit(X[train],y[train])
+
+        dum_pred = dum_model.predict(X[test])
+
+        dum_temp.append(mean_squared_error(y[test],dum_pred))
+
+    # Plot predictions vs real data
+    import matplotlib.pyplot as plt
+    
+    # Real data: Transfer fee vs Market value
+    plt.scatter(transfer_fees,y,marker='+',color='red')
+    
+    # Model: Transfer fee vs Predicted Market Value
+    
+    ypred = model.predict(xPoly)
+    plt.scatter(transfer_fees,ypred,facecolors='none',edgecolors='b')
+
+    # Dummy Model: Transfer Fee vs Predicted Market Value
+    # dum_pred = dum_model.predict(xPoly)
+    # plt.scatter(transfer_fees,dum_pred,facecolors='none',edgecolors='b')
+
+
+    plt.xlabel("Transfer Fees"); plt.ylabel("Market Value")
+    plt.legend(["Actual Market Value","Predicted Market Value"])
+    
+    plt.title("%s : Plot of Actual Market Values vs Predicted Market Values when poly = %i"%(csv_name ,poly_i))
+    #plt.title("Plot of Actual Market Values vs Predicted Market Values with Dummy Model")
+
+    #plt.show()
+
+    mean_error_num = np.array(lr_temp).mean()
+    std_error_num = np.array(lr_temp).std()
+
+    mean_error.append(mean_error_num)
+    std_error.append(std_error_num)
+
+    print("Poly i: ",poly_i)
+    
+    print("Logistic Regression MSE: ",mean_error_num)
+    print("Logistic Regression MSE std: ",std_error_num)
+
+    print("Dummy model MSE: ",np.array(dum_temp).mean())
+    print("Dummy model MSE std: ",np.array(dum_temp).std())
+
+    print()
 
 #train knn model with different n_neighbor, weights is using uniform
 model1 = KNeighborsRegressor(n_neighbors=6,weights='uniform').fit(Xtrain, ytrain)
