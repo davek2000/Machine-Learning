@@ -2,8 +2,8 @@ import numpy as np
 import pandas as pd
 
 #csv_name="Defenders.csv"
-csv_name="Midfielders.csv"
-
+#csv_name="Midfielders.csv"
+csv_name="Forwards.csv"
 
 df=pd.read_csv(csv_name)
 
@@ -107,7 +107,7 @@ for poly_i in poly_range:
 
     print()
 
-# Plot how to choose hyper-parameter: degree of polynomial
+# # Plot how to choose hyper-parameter: degree of polynomial
 # import matplotlib.pyplot as plt
 # print(mean_error)
 
