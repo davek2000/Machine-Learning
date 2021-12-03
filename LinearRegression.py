@@ -89,7 +89,7 @@ for poly_i in poly_range:
     plt.title("%s : Plot of Actual Market Values vs Predicted Market Values when poly = %i"%(csv_name ,poly_i))
     #plt.title("Plot of Actual Market Values vs Predicted Market Values with Dummy Model")
 
-    #plt.show()
+    plt.show()
 
     mean_error_num = np.array(lr_temp).mean()
     std_error_num = np.array(lr_temp).std()
@@ -143,3 +143,10 @@ for poly_i in poly_range:
 
 #-------------------------
 # Forwards.csv:
+# Best poly value: 1
+
+# MSE: 242.78
+# std: 90.19
+
+# dummy model has MSE of 370.28
+# and std MSE of 135.58
