@@ -30,6 +30,19 @@ X = np.column_stack((age,games_played,goals,own_goals,assists,yellow_cards,
 y = df.iloc[:,13]
 y = y/1000000   # divided by a million
 
+#define gaussian weight, will be used in knn models
+def gaussian_kernel2(distances):
+    weights=np.exp(-0.5*(distances**2))
+    return weights
+    
+def gaussian_kernel20(distances):
+    weights=np.exp(-0.05*(distances**2))
+    return weights
+
+def gaussian_kernel200(distances):
+    weights=np.exp(-0.005*(distances**2))
+    return weights
+
 kf = KFold(n_splits=5,shuffle=True)
 neighbor_num = [1,2,3,4,5,6,7]
 mean_error=[]
@@ -56,52 +69,43 @@ for neighbor in neighbor_num:
         dum_temp.append(mean_squared_error(y[test],dum_pred))
 
     # Plot predictions vs real data
-    import matplotlib.pyplot as plt
     
     # Real data: Transfer fee vs Market value
     plt.scatter(transfer_fees,y,marker='+',color='red')
     
     # Model: Transfer fee vs Predicted Market Value
     
-    ypred = model.predict(xPoly)
+    ypred = model.predict(X)
     plt.scatter(transfer_fees,ypred,facecolors='none',edgecolors='b')
 
     # Dummy Model: Transfer Fee vs Predicted Market Value
-    # dum_pred = dum_model.predict(xPoly)
+    # dum_pred = dum_model.predict(X)
     # plt.scatter(transfer_fees,dum_pred,facecolors='none',edgecolors='b')
 
 
     plt.xlabel("Transfer Fees"); plt.ylabel("Market Value")
     plt.legend(["Actual Market Value","Predicted Market Value"])
     
-    plt.title("%s : Plot of Actual Market Values vs Predicted Market Values when poly = %i"%(csv_name ,poly_i))
+    plt.title("%s : Plot of Actual Market Values vs Predicted Market Values when number of neighbors = %i"%(csv_name ,neighbor))
     #plt.title("Plot of Actual Market Values vs Predicted Market Values with Dummy Model")
 
     #plt.show()
 
-    mean_error_num = np.array(lr_temp).mean()
-    std_error_num = np.array(lr_temp).std()
+    mean_error_num = np.array(knn_temp).mean()
+    std_error_num = np.array(knn_temp).std()
 
     mean_error.append(mean_error_num)
     std_error.append(std_error_num)
 
-    print("Poly i: ",poly_i)
+    print("number of neighbors i: ",neighbor)
     
-    print("Logistic Regression MSE: ",mean_error_num)
-    print("Logistic Regression MSE std: ",std_error_num)
+    print("kNN MSE: ",mean_error_num)
+    print("kNN MSE std: ",std_error_num)
 
     print("Dummy model MSE: ",np.array(dum_temp).mean())
     print("Dummy model MSE std: ",np.array(dum_temp).std())
 
     print()
-
-#train knn model with different n_neighbor, weights is using uniform
-model1 = KNeighborsRegressor(n_neighbors=6,weights='uniform').fit(Xtrain, ytrain)
-ypred1 = model1.predict(Xtest)
-
-#calculate the error of the knn model
-error_final1=mean_squared_error(ytest,ypred1)
-print(error_final1)
 
 #define gaussian weight, will be used in knn models
 def gaussian_kernel2(distances):
