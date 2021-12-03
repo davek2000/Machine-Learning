@@ -77,22 +77,22 @@ for Ci in C_range:
 
 # Defenders.csv
 #-------------------------
-# Best C value is 10
-# Best poly value is 2
+# Best C value:
+# Best poly value:
 
-# MSE of 173.69
-# std of 238.84
+# MSE:
+# std:
 
 # dummy model has MSE of 247.55
 # and std MSE of 344.40
 
 # Midfielders.csv
 #--------------------------
-# Best C value is 0.5
-# Best poly value is 2
+# Best C value:
+# Best poly value:
 
-# MSE of 318.95
-# std of 451.78
+# MSE:
+# std:
 
 # dummy model has MSE of 372.64
 # and std of 530.02

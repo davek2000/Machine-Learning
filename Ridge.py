@@ -1,8 +1,10 @@
 import numpy as np
 import pandas as pd
 
-df = pd.read_csv("Defenders.csv")
-#df = pd.read_csv("Midfielders.csv")
+#csv_name="Defenders.csv"
+csv_name="Midfielders.csv"
+
+df = pd.read_csv(csv_name)
 
 age = df.iloc[:,2]
 games_played=df.iloc[:,3]
@@ -26,71 +28,117 @@ y = y/1000000   # divided by a million
 from sklearn.model_selection import KFold
 kf = KFold(n_splits=5,shuffle=True)
 
-C_range = [0.0001,0.001,0.01,0.1,0.5,1,5,10,50,100,500]
-poly_range=[1,2,3,4]
+#C_range = [0.0001,0.001,0.01,0.1,0.5,1,5,10,50,100,500]
+C_range=[0.1]
+poly_range=[1,2,3]
+
+mean_error=[]; std_error=[]
 
 for Ci in C_range:
 #for poly_i in poly_range:
     from sklearn.linear_model import Ridge
     model = Ridge(alpha=(1/(2*Ci)))     # find optimum C val
 
-    #model = Ridge(alpha=(1/(2*0.001)))  # Defenders.csv AND Midfielders.csv
+    #model = Ridge(alpha=(1/(2*0.1)))  # Defenders.csv AND Midfielders.csv
 
     from sklearn.preprocessing import PolynomialFeatures
     #xPoly = PolynomialFeatures(poly_i).fit_transform(X) # find optimum poly_i val
     
-    #xPoly = PolynomialFeatures(1).fit_transform(X)      # Defenders.csv
-    xPoly = PolynomialFeatures(2).fit_transform(X)     # Midfielders.csv
+    xPoly = PolynomialFeatures(1).fit_transform(X)      # Defenders.csv AND Midfielders.csv
 
     from sklearn.dummy import DummyRegressor
     dum_model = DummyRegressor(strategy="mean")
 
-    lasso_temp=[]; dum_temp=[]
+    ridge_temp=[]; dum_temp=[]
     for train,test in kf.split(xPoly):
         model.fit(xPoly[train],y[train])
     
         ypred = model.predict(xPoly[test])
 
         from sklearn.metrics import mean_squared_error
-        lasso_temp.append(mean_squared_error(y[test],ypred))
+        ridge_temp.append(mean_squared_error(y[test],ypred))
 
         dum_model.fit(xPoly[train],y[train])
 
         dum_pred = dum_model.predict(y[test])
 
         dum_temp.append(mean_squared_error(y[test],dum_pred))
+
+    # Plot predictions vs real data
+    import matplotlib.pyplot as plt
+    
+    # Real data: Transfer fee vs Market value
+    plt.scatter(transfer_fees,y,marker='+',color='red')
+    
+    # Model: Transfer fee vs Predicted Market Value
+    
+    ypred = model.predict(xPoly)
+    plt.scatter(transfer_fees,ypred,facecolors='none',edgecolors='b')
+
+    # Dummy Model: Transfer Fee vs Predicted Market Value
+    # dum_pred = dum_model.predict(xPoly)
+    # plt.scatter(transfer_fees,dum_pred,facecolors='none',edgecolors='b')
+
+
+    plt.xlabel("Transfer Fees"); plt.ylabel("Market Value")
+    plt.legend(["Actual Market Value","Predicted Market Value"])
+    
+    plt.title("%s : Plot of Actual Market Values vs Predicted Market Values"%(csv_name))
+    #plt.title("%s : Plot of Actual Market Values vs Predicted Market Values with Dummy Model"%csv_name)
+
+    plt.show()
+
+    mean_error_num = np.array(ridge_temp).mean()
+    std_error_num = np.array(ridge_temp).std()
+
+    mean_error.append(mean_error_num)
+    std_error.append(std_error_num)
     
     print("Ci = ",Ci)
     #print("poly_i = ",poly_i)
     
-    print("Ridge MSE: ",np.array(lasso_temp).mean())
-    print("Ridge MSE standard deviation",np.array(lasso_temp).std())
+    print("Ridge MSE: ",mean_error_num)
+    print("Ridge MSE standard deviation",std_error_num)
 
     print("Dummy MSE: ",np.array(dum_temp).mean())
     print("Dummy MSE standard deviation",np.array(dum_temp).std())
     print()
 
+# Plot how to choose hyper-parameter: C
+# import matplotlib.pyplot as plt
+# print(mean_error)
+# print(std_error)
+
+
+# plt.rcParams['figure.constrained_layout.use']=True
+# plt.rc('font',size=18)
+# plt.errorbar(C_range, mean_error, yerr=std_error,linewidth=3)
+# plt.xlabel('Ci'); plt.ylabel('Mean Square Error')
+# plt.title("%s : Optimum C value" % csv_name)
+# plt.legend(["Ridge Regression"])
+# plt.show()
+
 # Defenders.csv
 #-------------------------
-# Best C value is 0.001
-# Best poly value is 1
+# Best C value: 0.1
+# Best poly value: 1
 
-# MSE of 178.82
-# std of 256.12
+# MSE:
+# std:
 
 # dummy model has MSE of 247.55
 # and std MSE of 344.40
 
 # Midfielders.csv
 #--------------------------
-# Best C value is 0.001
-# Best poly value is 2
+# Best C value: 0.1
+# Best poly value: 1
 
-# MSE of 297.09
-# std of 374.89
+# MSE: 188.85
+# std: 43.62
 
-# dummy model has MSE of 372.64
-# and std of 530.02
+# dummy model has MSE of 262.91
+# and std of 55.85
 
 # Forwards.csv
 #-------------------------
