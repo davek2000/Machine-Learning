@@ -26,6 +26,13 @@ X = np.column_stack((age,games_played,goals,own_goals,assists,yellow_cards,
 y = df.iloc[:,13]
 y = y/1000000   # divided by a million
 
+# Plot input features vs output value
+import matplotlib.pyplot as plt
+plt.scatter(goals,y)
+plt.xlabel("Goals"); plt.ylabel("Market Value")
+plt.title("%s : Goals vs Market Value"%csv_name)
+plt.show()
+
 from sklearn.model_selection import KFold
 kf = KFold(n_splits=5,shuffle=True)
 
@@ -82,7 +89,7 @@ for poly_i in poly_range:
     plt.title("%s : Plot of Actual Market Values vs Predicted Market Values when poly = %i"%(csv_name ,poly_i))
     #plt.title("Plot of Actual Market Values vs Predicted Market Values with Dummy Model")
 
-    plt.show()
+    #plt.show()
 
     mean_error_num = np.array(lr_temp).mean()
     std_error_num = np.array(lr_temp).std()
