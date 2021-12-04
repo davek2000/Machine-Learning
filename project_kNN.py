@@ -30,19 +30,6 @@ X = np.column_stack((age,games_played,goals,own_goals,assists,yellow_cards,
 y = df.iloc[:,13]
 y = y/1000000   # divided by a million
 
-#define gaussian weight, will be used in knn models
-def gaussian_kernel2(distances):
-    weights=np.exp(-0.5*(distances**2))
-    return weights
-    
-def gaussian_kernel20(distances):
-    weights=np.exp(-0.05*(distances**2))
-    return weights
-
-def gaussian_kernel200(distances):
-    weights=np.exp(-0.005*(distances**2))
-    return weights
-
 kf = KFold(n_splits=5,shuffle=True)
 neighbor_num = [1,2,3,4,5,6,7]
 mean_error=[]
