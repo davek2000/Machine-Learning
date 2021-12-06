@@ -28,9 +28,9 @@ y = y/1000000   # divided by a million
 
 # Plot input features vs output value
 import matplotlib.pyplot as plt
-plt.scatter(goals,y)
-plt.xlabel("Goals"); plt.ylabel("Market Value")
-plt.title("%s : Goals vs Market Value"%csv_name)
+plt.scatter(games_played,y)
+plt.xlabel("Games Played"); plt.ylabel("Market Value")
+plt.title("%s : Games Played vs Market Value"%csv_name)
 plt.show()
 
 from sklearn.model_selection import KFold
