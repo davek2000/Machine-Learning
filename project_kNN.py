@@ -20,7 +20,7 @@ def gaussian_kernel200(distances):
     weights=np.exp(-0.005*(distances**2))
     return weights
 
-csv_name="Defender.csv"
+csv_name="Defenders.csv"
 # csv_name="Midfielders.csv"
 
 df=pd.read_csv(csv_name)
