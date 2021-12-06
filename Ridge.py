@@ -29,18 +29,18 @@ y = y/1000000   # divided by a million
 from sklearn.model_selection import KFold
 kf = KFold(n_splits=5,shuffle=True)
 
-#C_range = [0.0001,0.001,0.01,0.1,0.5,1,5,10,50,100,500]
-poly_range=[1,2,3]
+C_range = [0.0001,0.001,0.01,0.1,0.5,1,5,10,50,100,500]
+#poly_range=[1,2,3]
 
 mean_error=[]; std_error=[]
 
-#for Ci in C_range:
-for poly_i in poly_range:
+for Ci in C_range:
+#for poly_i in poly_range:
     from sklearn.linear_model import Ridge
     #model = Ridge(alpha=(1/(2*Ci)))     # find optimum C val
 
-    #model = Ridge(alpha=(1/(2*0.1)))  # Defenders.csv AND Midfielders.csv
-    model = Ridge(alpha=(1/(2*0.001))) # Forwards.csv
+    model = Ridge(alpha=(1/(2*0.1)))  # Defenders.csv AND Midfielders.csv
+    #model = Ridge(alpha=(1/(2*0.001))) # Forwards.csv
 
     from sklearn.preprocessing import PolynomialFeatures
     #xPoly = PolynomialFeatures(poly_i).fit_transform(X) # find optimum poly_i val
@@ -66,28 +66,28 @@ for poly_i in poly_range:
         dum_temp.append(mean_squared_error(y[test],dum_pred))
 
     #Plot predictions vs real data
-    import matplotlib.pyplot as plt
+    # import matplotlib.pyplot as plt
     
-    # Real data: Transfer fee vs Market value
-    plt.scatter(transfer_fees,y,marker='+',color='red')
+    # # Real data: Transfer fee vs Market value
+    # plt.scatter(transfer_fees,y,marker='+',color='red')
     
-    # Model: Transfer fee vs Predicted Market Value
+    # # Model: Transfer fee vs Predicted Market Value
     
-    ypred = model.predict(xPoly)
-    plt.scatter(transfer_fees,ypred,facecolors='none',edgecolors='b')
+    # ypred = model.predict(xPoly)
+    # plt.scatter(transfer_fees,ypred,facecolors='none',edgecolors='b')
 
-    # Dummy Model: Transfer Fee vs Predicted Market Value
-    # dum_pred = dum_model.predict(xPoly)
-    # plt.scatter(transfer_fees,dum_pred,facecolors='none',edgecolors='b')
+    # # Dummy Model: Transfer Fee vs Predicted Market Value
+    # # dum_pred = dum_model.predict(xPoly)
+    # # plt.scatter(transfer_fees,dum_pred,facecolors='none',edgecolors='b')
 
 
-    plt.xlabel("Transfer Fees"); plt.ylabel("Market Value")
-    plt.legend(["Actual Market Value","Predicted Market Value"])
+    # plt.xlabel("Transfer Fees"); plt.ylabel("Market Value")
+    # plt.legend(["Actual Market Value","Predicted Market Value"])
     
-    plt.title("%s : Plot of Actual Market Values vs Predicted Market Values"%(csv_name))
-    #plt.title("%s : Plot of Actual Market Values vs Predicted Market Values with Dummy Model"%csv_name)
+    # plt.title("%s : Plot of Actual Market Values vs Predicted Market Values"%(csv_name))
+    # #plt.title("%s : Plot of Actual Market Values vs Predicted Market Values with Dummy Model"%csv_name)
 
-    plt.show()
+    # plt.show()
 
     mean_error_num = np.array(ridge_temp).mean()
     std_error_num = np.array(ridge_temp).std()
@@ -95,8 +95,8 @@ for poly_i in poly_range:
     mean_error.append(mean_error_num)
     std_error.append(std_error_num)
     
-    #print("Ci = ",Ci)
-    print("poly_i = ",poly_i)
+    print("Ci = ",Ci)
+    #print("poly_i = ",poly_i)
     
     print("Ridge MSE: ",mean_error_num)
     print("Ridge MSE standard deviation",std_error_num)
@@ -124,11 +124,11 @@ for poly_i in poly_range:
 # Best C value: 0.1
 # Best poly value: 1
 
-# MSE:
-# std:
+# MSE: 106.12
+# std: 27.83
 
-# dummy model has MSE of 247.55
-# and std MSE of 344.40
+# dummy model has MSE of 174.45
+# and std MSE of 38.13
 
 # Midfielders.csv
 #--------------------------

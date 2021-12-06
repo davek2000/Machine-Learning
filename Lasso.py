@@ -6,7 +6,9 @@ from sklearn.model_selection import KFold
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.dummy import DummyRegressor
 
-csv_name="Midfielder.csv"
+csv_name="Defenders.csv"
+#csv_name="Midfielder.csv"
+#csv_name="Forwards.csv"
 
 df=pd.read_csv(csv_name)
 
@@ -91,7 +93,7 @@ plt.xlabel('q parameter'); plt.ylabel('Mean squared error')
 # ax.set_xscale('log')
 # plt.title("%s : Find the optimum C parameter" % csv_name)
 plt.title("%s : Find the optimum degree of polynomial" % csv_name)
-plt.show()
+#plt.show()
 
 fig2=plt.figure()  
 plt.scatter(transfer_fees,y,marker='+',color='red')
@@ -105,7 +107,7 @@ plt.scatter(transfer_fees,ypred2,facecolors='none',edgecolors='b')
 plt.xlabel("Transfer Fees"); plt.ylabel("Market Value")
 plt.legend(["Actual Market Value","Predicted Market Value"])
 plt.title("%s : Plot of Actual Market Values vs Predicted Market Values when C=1, poly = 1"%(csv_name ))
-plt.show()
+#plt.show()
 
 # Defenders.csv
 #-------------------------
