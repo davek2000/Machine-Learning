@@ -2,7 +2,8 @@ import numpy as np
 import pandas as pd
 
 #csv_name="Defenders.csv"
-csv_name="Midfielders.csv"
+#csv_name="Midfielders.csv"
+csv_name="Forwards.csv"
 
 df = pd.read_csv(csv_name)
 
@@ -29,22 +30,22 @@ from sklearn.model_selection import KFold
 kf = KFold(n_splits=5,shuffle=True)
 
 #C_range = [0.0001,0.001,0.01,0.1,0.5,1,5,10,50,100,500]
-C_range=[0.1]
 poly_range=[1,2,3]
 
 mean_error=[]; std_error=[]
 
-for Ci in C_range:
-#for poly_i in poly_range:
+#for Ci in C_range:
+for poly_i in poly_range:
     from sklearn.linear_model import Ridge
-    model = Ridge(alpha=(1/(2*Ci)))     # find optimum C val
+    #model = Ridge(alpha=(1/(2*Ci)))     # find optimum C val
 
     #model = Ridge(alpha=(1/(2*0.1)))  # Defenders.csv AND Midfielders.csv
+    model = Ridge(alpha=(1/(2*0.001))) # Forwards.csv
 
     from sklearn.preprocessing import PolynomialFeatures
     #xPoly = PolynomialFeatures(poly_i).fit_transform(X) # find optimum poly_i val
     
-    xPoly = PolynomialFeatures(1).fit_transform(X)      # Defenders.csv AND Midfielders.csv
+    xPoly = PolynomialFeatures(1).fit_transform(X)      # Defenders.csv AND Midfielders.csv AND Forwards.csv
 
     from sklearn.dummy import DummyRegressor
     dum_model = DummyRegressor(strategy="mean")
@@ -64,7 +65,7 @@ for Ci in C_range:
 
         dum_temp.append(mean_squared_error(y[test],dum_pred))
 
-    # Plot predictions vs real data
+    #Plot predictions vs real data
     import matplotlib.pyplot as plt
     
     # Real data: Transfer fee vs Market value
@@ -94,8 +95,8 @@ for Ci in C_range:
     mean_error.append(mean_error_num)
     std_error.append(std_error_num)
     
-    print("Ci = ",Ci)
-    #print("poly_i = ",poly_i)
+    #print("Ci = ",Ci)
+    print("poly_i = ",poly_i)
     
     print("Ridge MSE: ",mean_error_num)
     print("Ridge MSE standard deviation",std_error_num)
@@ -112,9 +113,9 @@ for Ci in C_range:
 
 # plt.rcParams['figure.constrained_layout.use']=True
 # plt.rc('font',size=18)
-# plt.errorbar(C_range, mean_error, yerr=std_error,linewidth=3)
-# plt.xlabel('Ci'); plt.ylabel('Mean Square Error')
-# plt.title("%s : Optimum C value" % csv_name)
+# plt.errorbar(poly_range, mean_error, yerr=std_error,linewidth=3)
+# plt.xlabel('Degree of Polynomial'); plt.ylabel('Mean Square Error')
+# plt.title("%s : Optimum Polynomial value" % csv_name)
 # plt.legend(["Ridge Regression"])
 # plt.show()
 
@@ -142,5 +143,15 @@ for Ci in C_range:
 
 # Forwards.csv
 #-------------------------
+# Best C value: 0.01
+# Best poly val: 1
+
+# MSE: 233.60
+# std: 85.17
+
+# dummy model has MSE of 368.10
+# and std of 121.92
+
+
 
 
